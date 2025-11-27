@@ -32,9 +32,9 @@ et visualisation.
   - au prix du marché,
   - surévalué.
 - Fournir des indicateurs clairs pour le pilotage de la performance commerciale.
-
-
+  
   ---
+  
 ## Structure du projet
 
 ```text
@@ -49,5 +49,55 @@ et visualisation.
 ├── powerbi/
 │   └── dashboard.pbix     # Tableau de bord Power BI
 └── README.md
+```
 
+
+## Méthodologie
+
+1. **Collecte et nettoyage des données**
+   - Import des fichiers DVF (2020 à 2025) pour l’Île-de-France.
+   - Suppression des valeurs manquantes et aberrantes.
+   - Calcul du prix au m² pour chaque transaction.
+   - Création de la variable année.
+
+2. **Modélisation SQL**
+   - Création de la table `transactions_idf`.
+   - Agrégation des données pour obtenir le prix moyen du marché par commune et par année.
+   - Jointure pour comparer chaque transaction au prix du marché local.
+   - Calcul de l’écart en pourcentage et attribution du statut :
+     - Sous-évalué,
+     - Prix cohérent,
+     - Surévalué.
+
+3. **Visualisation sous Power BI**
+   - Création d’un tableau de bord “Vue Marché”.
+   - Création d’un tableau de bord “Évaluation d’un bien”.
+   - Mise en place de filtres par commune, année et statut.
+
+
+---
+
+## Résultats & Tableaux de bord
+
+Deux tableaux de bord Power BI ont été réalisés :
+
+### 1. Vue Marché
+- Évolution du prix moyen au m² par année.
+- Comparaison des prix au m² par département.
+- Indicateurs globaux :
+  - Prix moyen au m²,
+  - Surface moyenne,
+  - Nombre de ventes analysées.
+
+### 2. Évaluation d’un bien
+- Filtres par commune, année et statut du prix.
+- Indicateurs :
+  - Prix moyen du marché,
+  - Prix des biens analysés,
+  - Écart moyen au marché (%).
+- Classement automatique des biens en :
+  - Sous-évalué,
+  - Prix cohérent,
+  - Sur-évalué.
+- Tableau détaillé transaction par transaction.
 
