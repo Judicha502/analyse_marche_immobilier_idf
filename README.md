@@ -35,7 +35,6 @@ et visualisation.
 
 
   ---
-  
 ## Structure du projet
 
 ```text
@@ -50,31 +49,5 @@ et visualisation.
 ├── powerbi/
 │   └── dashboard.pbix     # Tableau de bord Power BI
 └── README.md
-
-  ---
-
-## Méthodologie
-
-1. **Collecte et nettoyage des données**
-   - Import des fichiers DVF (2020 à 2025) pour l’Île-de-France.
-   - Suppression des valeurs manquantes et aberrantes.
-   - Calcul du prix au m² pour chaque transaction.
-   - Création de la variable année.
-
-2. **Modélisation SQL**
-   - Création de la table `transactions_idf`.
-   - Agrégation des données pour obtenir le prix moyen du marché par commune et par année.
-   - Jointure pour comparer chaque transaction au prix du marché local.
-   - Calcul de l’écart en pourcentage et attribution du statut :
-     - Sous-évalué,
-     - Prix cohérent,
-     - Surévalué.
-
-3. **Visualisation sous Power BI**
-   - Création d’un tableau de bord “Vue Marché”.
-   - Création d’un tableau de bord “Évaluation d’un bien”.
-   - Mise en place de filtres par commune, année et statut.
-
----
 
 
