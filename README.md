@@ -93,7 +93,7 @@ Ce tableau de bord permet d’analyser l’évolution du marché immobilier en �
   - Surface moyenne,
   - Nombre total de ventes.
 
-![Vue Marché](powerbi/vue_marché.png)
+![Vue Marché](https://github.com/Judicha502/analyse_marche_immobilier_idf/blob/main/powerbi/vue%20marche%CC%81.png)
 
 ---
 
