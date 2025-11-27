@@ -77,27 +77,40 @@ et visualisation.
 
 ---
 
+---
+
 ## Résultats & Tableaux de bord
 
-Deux tableaux de bord Power BI ont été réalisés :
+Deux tableaux de bord Power BI ont été réalisés afin de répondre aux besoins d’analyse du marché et d’évaluation des biens immobiliers.
 
 ### 1. Vue Marché
-- Évolution du prix moyen au m² par année.
-- Comparaison des prix au m² par département.
+
+Ce tableau de bord permet d’analyser l’évolution du marché immobilier en Île-de-France :
+- Évolution du prix moyen au m² par année,
+- Comparaison des prix au m² par département,
 - Indicateurs globaux :
   - Prix moyen au m²,
   - Surface moyenne,
-  - Nombre de ventes analysées.
+  - Nombre total de ventes.
+
+![Vue Marché](powerbi/vue_marché.png)
+
+---
 
 ### 2. Évaluation d’un bien
-- Filtres par commune, année et statut du prix.
+
+Ce tableau de bord permet d’évaluer si un bien est vendu au bon prix par rapport au marché local :
+- Filtres par **commune**, **année** et **statut du prix**,
 - Indicateurs :
   - Prix moyen du marché,
   - Prix des biens analysés,
-  - Écart moyen au marché (%).
-- Classement automatique des biens en :
+  - Écart moyen au marché (%),
+- Classement automatique des biens :
   - Sous-évalué,
   - Prix cohérent,
-  - Sur-évalué.
+  - Sur-évalué,
 - Tableau détaillé transaction par transaction.
+
+![Évaluation d’un bien](powerbi/évaluation_d'un_bien.png)
+
 
