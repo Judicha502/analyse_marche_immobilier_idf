@@ -111,6 +111,6 @@ Ce tableau de bord permet d’évaluer si un bien est vendu au bon prix par rapp
   - Sur-évalué,
 - Tableau détaillé transaction par transaction.
 
-![Évaluation d’un bien](powerbi/évaluation_d'un_bien.png)
+![Évaluation d’un bien](https://github.com/Judicha502/analyse_marche_immobilier_idf/blob/main/powerbi/e%CC%81valuation%20d'un%20bien.png)
 
 
